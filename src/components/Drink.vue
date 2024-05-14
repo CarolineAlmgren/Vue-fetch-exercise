@@ -16,10 +16,10 @@ defineEmits<{
 
 <template>
   <div class="drink-div">
-  <h3>{{ drink.strDrink }}</h3>
+  <h2>{{ drink.strDrink }}</h2>
   <p>Id: {{ drink.idDrink }}</p>
   <div id="ingredients">
-  <h4>Ingredients: </h4>
+  <h3>Ingredients: </h3>
     <p>{{ drink.strIngredient1 }}</p>
     <p>{{ drink.strIngredient2 }}</p>
     <p>{{ drink.strIngredient3 }}</p>
@@ -36,8 +36,11 @@ defineEmits<{
 
 <style scoped>
 .drink-div {
+  margin: 10px;
+  padding: 10px;
   display: flex;
   flex-direction: column;
+  border: black solid 1px;
 }
 img {
   width:20%;
